@@ -33,7 +33,7 @@ def reply_to_tweet():
         if '#askmanav' in mention.full_text.lower():
             print("found #askmanav");
             print("Replying Back");
-            api.update_status('@' +mention.user.screen_name+ 'We Will Reply To You As Soon As Possible',mention.id)
+            api.update_status('Hello'+'@' +mention.user.screen_name+ 'I have heard your query and will try to put in upcoming video',mention.id)
 while True:
     reply_to_tweet();
     time.sleep(15)
